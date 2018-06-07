@@ -8,8 +8,7 @@
         <ul>
           <li class="active"><a href="/">首页</a></li>
           <li v-for="nav,index in navs" :key='index'>
-              <router-link :to="{ name: 'lists', params: { type: nav.id, area:0, year:0 }}">{{nav.name}}</router-link>;
-              <!-- <a href="javascript:void(0);" @click="nav_list(nav.id)">{{nav.name}}</a> -->
+              <router-link :to="{ name: 'lists', params: { type: nav.id, area:0, year:0 }}">{{nav.name}}</router-link>
           </li>
           <li><a href="http://www.vipsource.cn/books">图书</a></li>
           <li><a href="http://novel.vipsource.com.cn">小说</a></li>

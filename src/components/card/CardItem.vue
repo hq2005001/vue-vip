@@ -1,8 +1,9 @@
 <template>
   <li class="item">
     <router-link :to="{ name: 'detail', params: { id: movie.id }}" class="item-link">
+
         <div class="item-pic item-lazy" style="height: 150px;">
-            <img v-lazy="movie.pic" style="height: 150px;">
+            <img :src="movie.pic" style="height: 150px;">
         </div>
         <span class="covericon">{{tag}}</span>
     </router-link>

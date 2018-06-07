@@ -5,7 +5,7 @@
                 <li class="on">
                     <a href="javascript:void(0);">{{title}}</a>
                 </li>
-                <li class="on" v-for="item, index in items" :key="index" >
+                <li class="on" v-for="item, index in items" :key="index">
                     <router-link to="{name}"></router-link>
                 </li>
             </ul>

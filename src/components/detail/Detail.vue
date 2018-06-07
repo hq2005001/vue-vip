@@ -3,14 +3,17 @@
     <div>
         <!-- 详细介绍  -->
         <section class="detail">
-            <div class="detail-wrap">
-                <div class="detail-cover">
+            <div class="detail-wrap" :style="{background : background}">
+                <!-- <div class="detail-cover">
                     <img v-lazy="bg" :alt="movie.name">
-                </div>
-                <div class="detail-img">
+                </div> -->
+                <div>
+                  <div class="detail-img">
                     <img v-lazy="movie.pic" :alt="movie.name">
+                  </div>
                 </div>
-                <div class="detail-txt">
+                <div>
+ <div class="detail-txt" style="width:13rem">
                     <h1 class="aui-ellipsis-2">{{movie.name}}</h1>
                     <p class="detail-category">
                         <span class="video-year">{{movie.year}}</span>
@@ -34,6 +37,9 @@
                         </a>
                     </div>
                 </div>
+                </div>
+
+
             </div>
         </section>
 
@@ -59,6 +65,11 @@
       return {
         show_more: false,
         bg: bg
+      }
+    },
+    computed: {
+      background() {
+        return 'url('+bg+')';
       }
     },
     methods: {
