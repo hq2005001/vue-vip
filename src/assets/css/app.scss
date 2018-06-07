@@ -1,0 +1,20 @@
+@import "~font-awesome/scss/font-awesome";
+@import "aui.css";
+@import 'main.css';
+/*@import '~dplayer/dist/DPlayer.min.css';*/
+/*@import '~video.js/dist/video-js.min.css';*/
+
+ul.pagination {
+  li {
+    display: inline-block;
+  }
+  li.active {
+    span {
+      background-color: #FF6666;
+    }
+  }
+}
+
+#cnzz_stat_icon_1272889994 {
+  display: none;
+}
